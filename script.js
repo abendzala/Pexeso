@@ -164,6 +164,6 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("GAME OVER");
       location.reload(); 
 
-      
+      let timer = 30;
   }
 });
