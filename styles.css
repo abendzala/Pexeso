@@ -1,0 +1,52 @@
+.card {
+    position: relative;
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+    background-size: cover;
+    background-color: #007bff; /* Add a background color to differentiate cards */
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+.card.hidden {
+    background-image: url('path/to/default-image.jpg'); /* Default image path */
+    background-color: transparent;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card .music-note {
+    font-size: 48px;
+    display: none;
+}
+
+.indicator-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    color: black;
+    display: contents flex; /* Hidden by default */
+    z-index: 1000; /* Ensure it is above other elements */
+
+}
+
+.indicator-popup.correct {
+    background-color: green;
+}
+
+.indicator-popup.wrong {
+    background-color: red;
+}

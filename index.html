@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Matching Game</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        
+
+        <h1 class="text-center my-4">Ludia Otupjevavaju</h1>
+        <div class="text-center mb-4">
+            <select id="game-type" class="form-control" style="width: 200px; display: inline-block;">
+                <option value="words">Classic mode</option>
+                <option value="images">Image mode</option>
+                <option value="sounds">Sound mode</option>
+            </select>
+            <button id="start-game" class="btn btn-primary ml-2">Start Game</button>
+        </div>
+        <div id="match-indicator" class="indicator-popup"></div>
+        <div id="game-board" class="row rounded"></div>
+        <div id="game-info" class="text-center mt-4">
+            <p id="turn-info">Player 1's turn</p>
+            <p id="score">Player 1: 0 | Player 2: 0</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
